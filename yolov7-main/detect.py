@@ -41,7 +41,7 @@ def detect(save_img=False):
     if half:
         model.half()  # to FP16
 
-    # Second-stage classifier
+    # Second-stage classif
     classify = False
     if classify:
         modelc = load_classifier(name='resnet101', n=2)  # initialize
